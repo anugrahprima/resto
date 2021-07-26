@@ -161,11 +161,7 @@ h1, h2, h3, h4, h5, h6, p{
 .title{
     padding: 0.2rem;
 }
-.title h4{
-    text-transform: uppercase;
-    color: var(--grey);
-    font-size: 0.8rem;
-}
+
 .title h2{
     opacity: 0.9;
     text-transform: capitalize;
@@ -307,6 +303,10 @@ h1, h2, h3, h4, h5, h6, p{
     transform: translateY(0);
 }
 
+/* info */
+.info{
+    overflow-x: hidden;
+}
 
 /* contact */
 .contact-map{
@@ -495,6 +495,14 @@ h1, h2, h3, h4, h5, h6, p{
     .testimonial-item p{
         width: 60%;
     }
+
+    .info{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 3rem;
+        align-items: center;
+    }
+
     .contact-wrapper{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
